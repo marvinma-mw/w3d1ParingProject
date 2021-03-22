@@ -15,9 +15,9 @@ return `Recycle Me!`
 
 function shouldRecycle(item) {
   if (item.plastic) {
+    if (item.color === 'black') {
+      return 'Currently, cannot be recycled.'}
     return 'Recycle Me!'
-  } else if (item.color === 'black') {
-    return 'Currently, cannot be recycled.'
   } else if (item.aluminum) {
     return 'Recycle Me!'
   } else if (item.paper) {
